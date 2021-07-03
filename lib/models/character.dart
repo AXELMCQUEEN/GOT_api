@@ -17,8 +17,8 @@ this.house,
 factory Characters.instancia(Map<String,dynamic> datos){
   return Characters(
     sentence: datos[ "sentence"] ,
-    character: datos["name"]["slug"],
-    house: datos["name"]["slug"],
+    character: datos ['character']['name']['slug'] ,
+    house: datos ['house']['name']['slug'],
 
   
     );

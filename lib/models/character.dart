@@ -1,27 +1,20 @@
-class Characters{
-String ? sentence;
-String ? character;
+class Character{
+String ? img;
+String ? level;
 String ? name;
-String? slug;
-String ? house;
 
-Characters({
-this.sentence,
-this.character,
+
+Character({
+this.img,
+this.level,
 this.name,
-this.slug,
-this.house,
+
 
 });
 
-factory Characters.instancia(Map<String,dynamic> datos){
-  return Characters(
-    sentence: datos[ "sentence"] ,
-    character: datos ['character']['name']['slug'] ,
-    house: datos ['house']['name']['slug'],
+
 
   
-    );
+    
 }
 
-}
